@@ -1,0 +1,356 @@
+body{
+  background-color: #f6f6f6;
+  border-top: 10px solid #87d7d5;
+  color: #515151;
+  margin: 0;
+  font-family: Verdana,Arial,Helvetica,'meirio','メイリオ','Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4',Osaka,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 924px;
+}
+
+.head-wrapper{
+  display:flex;
+  justify-content: space-between;
+}
+ /*タイトル*/
+.logo{
+  padding-top: 50px;
+}
+/*コンタクト*/
+.contact-wrapper{
+  padding-top: 10px;
+}
+.secondary{
+  /* line-height:4px; */
+  font-size: 10px;
+  text-align: right;
+  color:black;
+  margin:0;
+}
+
+.phone-wrapper{
+  font-size: 28px;
+}
+
+.phone:before{
+  content: url(https://haniwaman.com/sample/part3/template_08/common/images/bgTel.png);
+  display: inline-block;
+  padding: 10px;
+}
+
+
+
+/*予約時間*/
+.reservation{
+  padding:4px;
+  font-size:10px;
+  border:1px solid #d6d6d6; 
+  text-align: center;
+  margin-bottom: 20px;
+}
+.holiday{
+  color: #b23038;
+}
+/*メニュー*/
+.menu-wrapper{
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+.menu-btn{
+  background-color: #87d7d5;
+  color:white;
+  width: 25%;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 15px;
+  height: 55px;
+  border: 1px solid #6dc6c4;
+  font-size: 15px;
+  
+}
+
+.menu-btn:hover{
+  background-color: #93dedb;
+}
+
+.sub-menu{
+  color:white;
+  font-size: 5px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.section-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.section-wrap{
+  width: 260px;
+}
+
+.section-box {
+  background-color:white;
+  margin-bottom: 20px;
+  border: 1px solid #6dc6c4;
+  font-size: 14px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.list{
+ list-style-type: none;
+ margin:0;
+ padding: 0 10px 20px 10px;
+}
+
+.section{
+  border-bottom: 1px solid #6dc6c4;
+  text-align: left;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.section:before {
+  content: url(https://haniwaman.com/sample/part3/template_08/common/images/bgListIcon01.png);
+  display: inline-block;
+  padding: 5px;
+}
+
+
+.list-item:link{
+  text-decoration: none;
+}
+
+.list-item:visited{
+  color: #515151;
+}
+
+.list-item:hover{
+  color:  #6dc6c4;
+  text-decoration: none;
+}
+
+.title{
+  background-color: #87d7d5;
+  color:white;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #6dc6c4;
+  font-size: 16px;
+  text-align: left;
+}
+
+.image-wrapper{
+   flex:1;
+   margin-left: 20px;
+}
+
+.image{
+  width:100%;
+}
+
+.info-wrapper{
+  background-color: white;
+  padding:20px;
+}
+
+.info-wrap{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 13px;
+  text-align: left;
+  border-bottom: 1px dotted #CCCBCD;
+  padding:10px 0;
+}
+
+.info-title{
+  text-align: left;
+  border-bottom: 3px solid  #6dc6c4;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.info-list{
+  margin: 0;
+  padding:15px 10px;
+}
+
+.date{
+  font-weight: bold;
+}
+
+.info{
+  text-align: left;
+  flex:1;
+  margin: 0 20px;
+}
+
+.footer-menu-wrap{
+  background-color: #6cc6c4;
+  color:white;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: left;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.footer-menu {
+  position: relative;
+  padding-left: 20px;
+  margin: 10px;
+}
+
+.footer-menu:before{
+  content: url(https://haniwaman.com/sample/part3/template_08/common/images/bgFooterIcon.png);
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+
+.footer-menu:visited{
+  color: white;
+}
+
+.footer-menu:hover{
+  text-decoration: underline;
+}
+
+.footer-menu{
+  text-decoration: none;
+}
+
+.footer-contact {
+  text-align: right;
+  font-size: 13px;
+  padding: 15px 0;
+  border-bottom: 3px solid  #6dc6c4;
+  display:flex;
+  justify-content: flex-end;
+}
+
+.name {
+  font-weight: bold;
+  margin:0 5px 0 0;
+
+}
+
+.address{
+ display:inline;
+ margin:0 5px 0 0;
+}
+
+.tel {
+  margin: 0;
+}
+
+.mark{
+  font-size: 12px;
+  text-align: center;
+  padding:15px;
+}
+
+@media screen and (max-width: 700px) { 
+
+  .head-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-wrap{
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .logo{
+    padding: 0;
+  }
+
+  .contact-wrapper{
+    margin: 0 auto;
+  }
+
+  .secondary{
+    margin: 0 auto;
+  }
+
+  .menu-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu-btn{
+    width:50%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 70px;
+    margin:0;
+  }
+
+  .image-wrapper{
+    order: 1;
+    /* padding: 0 15px; */
+    margin:0;
+  }
+  
+  .info-wrapper{
+    padding:15px;
+  }
+
+  .info-wrap{
+    display: block;
+  }
+
+  .info-list{
+    padding:15px 0;
+  }
+
+  .info{
+    margin: 0;
+    padding: 15px 5px 5px 5px;
+  }
+
+  .section-wrapper{
+    flex-direction: column;
+    padding:0 20px;
+  }
+  .section-wrap{
+    order: 2;
+    width:100%;
+    margin-top:40px;
+  }
+
+  .footer-menu-wrap{
+    margin: 0px 20px;
+  }
+
+  .footer-contact{
+    flex-direction: column;
+    padding: 15px 20px 0 20px;
+    line-height:25px;
+  }
+
+  .address{
+    margin:0;
+  }
+
+  .name{
+    margin: 0;
+  }
+}
