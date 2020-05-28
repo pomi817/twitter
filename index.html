@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href = "css/twitter.css
+  <link rel="stylesheet" href = "stylesheet.css
   ">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <title>Twitter</title>
@@ -14,27 +14,41 @@
 
 
 <!-- メニュー背景 -->
+<div class = "menu-wrap">
     <div class = "menu-wrapper">
       <a class =  "menu" href ="#"><i class="fab fa-twitter menu-icon"></i></a>
 
-      <a class =  "menu" href ="#"><i class="fas fa-home menu-icon"></i>ホーム</a>
+      <a class =  "menu" href ="#"><i class="fas fa-home menu-icon"></i><span class = "menu-text">ホーム</span></a>
 
-      <a class =  "menu" href ="#"><i class="fas fa-hashtag menu-icon"></i>話題を検索</a>
+      <a class =  "menu" href ="#"><i class="fas fa-hashtag menu-icon"></i><span class = "menu-text">話題を検索</span></a>
 
-      <a class =  "menu" href ="#"><i class="fas fa-bell menu-icon"></i>通知</a>
+      <a class = "menu" href ="#"><i class="far fa-bell menu-icon"></i><span class = "menu-text">通知</span></a>
 
-      <a class =  "menu" href ="#"><i class="far fa-envelope menu-icon"></i>メッセージ</a>
+      <a class =  "menu" href ="#"><i class="far fa-envelope menu-icon"></i><span class = "menu-text">メッセージ</span></a>
 
-      <a class =  "menu" href ="#"><i class="far fa-bookmark menu-icon"></i>ブックマーク</a>
+      <a class =  "menu" href ="#"><i class="far fa-bookmark menu-icon"></i><span class = "menu-text">ブックマーク</span></a>
 
-      <a class =  "menu" href ="#"><i class="far fa-file-alt menu-icon"></i>リスト</a>
+      <a class =  "menu" href ="#"><i class="far fa-file-alt menu-icon"></i><span class = "menu-text">リスト</span></a>
 
-      <a class = "menu" href ="#"><i class="fas fa-user menu-icon"></i>プロフィール</a>
+      <a class = "menu" href ="#"><i class="fas fa-user menu-icon"></i><span class = "menu-text">プロフィール</span></a>
 
-      <a class = "menu" href ="#"><i class="far fa-comment-dots menu-icon"></i>もっと見る</a>
-
+      <a class = "menu" href ="#"><i class="far fa-comment-dots menu-icon"></i><span class = "menu-text">もっと見る</span></a>
+    
       <a class = "tweet-btn" href ="#">ツイートする</a>
+
+      <a class ="menu-icons" href ="#">
+      <div class ="menu-myicon-wrapper">
+      <img class = "menu-myicon" src = "image/baby.jpeg">
+        <div class = "menu-myicon-wrap">
+          <p class = "name">ぽみ＠プログ…</p>
+          <div class = "myicon-code">@2222 </div>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        </div>
+      </a>
     </div>
+    
+  </div>
     
 <!-- メイン背景 -->
     <div class = "main-wrapper">
@@ -43,7 +57,7 @@
         <h3 class = "top-name">ぽみ@プログラミング初心者</h3>
       </div>
     
-      <a class = "img" href = "#"><img class = "profile-img" src ="IMG_1647.JPG"></a>
+      <a class = "img" href = "#"><img class = "profile-img" src ="image/IMG_1647.JPG"></a>
 
       <div class = "profile-wrap">
         <a class = "img" href = "#"><div class = "my-icon"></div></a>
@@ -70,7 +84,7 @@
       </div>
 
       <div class = "tweet-wrapper">
-        <a class = "img" href = "#"><img class = "tweet-icon" src = "baby.jpeg"></a>
+        <a class = "img" href = "#"><img class = "tweet-icon" src = "image/baby.jpeg"></a>
         <div class = "tweet-wrap">
           <a class ="tweet-name" href = "#">ぽみ＠プログラミング初心者</a>
           <div class = "code">@2222 ・</div>
@@ -99,11 +113,42 @@
     
 <!-- お知らせ背景 -->
       <div class = "info-wrapper">
+        <div class ="info-wrap">
         <input class = "search" type = "text" placeholder="&#xf002;   キーワード検索">
-      </div>
+      
+      <div class = "picture"></div>
 
-</div>
+     
+      <div class = "recommended">おすすめツイート
+        <ul>
+          <a class ="menu-icons" href ="#">
+          <div class ="menu-myicon-wrapper">
+          <img class = "menu-myicon" src = "image/baby.jpeg">
+            <div class = "menu-myicon-wrap">
+              <li class = "name">ぽみ＠プログ…</li>
+              <li class = "myicon-code">@2222 </li>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            </div>
+          </a>
+        </div>
+        <li class = "tweet-list">@@@</li>
+      </ul>
+    </div>
+      <div class = "now">今どうしてる？</div>
+
+      <div class = "site-wrapper">
+      <a class = "site" href = "#">利用規約</a>
+      <a class = "site" href = "#">プライバシーポリシー</a>
+      <a class = "site" href = "#">Cookie</a>
+      <a class = "site" href = "#">広告情報</a>
+      <a class = "site" href = "#">もっと見る</a>
+      <p class = "mark">© 2020 Twitter, Inc.</p>
+    </div>
   
+</div>
+</div>
+</div>
   
 </body>
 </html>

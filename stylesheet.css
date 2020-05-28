@@ -1,14 +1,22 @@
+body{
+  margin: 0 60px;
+  height: 100vh;
+}
+
 .top-wrapper{
   display:flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  margin: 0 60px;
+  justify-content: space-between;
 }
 
 .menu-wrapper{
-  display: flex;
+  display:flex;
   flex-direction: column;
+  margin:0 auto;
+  /* padding-left: 70px; */
+  /* width: 270px;
+  padding: 0 60px; */
 }
+
 
 .menu{
   margin: 5px;
@@ -34,13 +42,13 @@
 
 .fa-twitter{
   color: #41a1f2;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .tweet-btn{
   background-color: #41a1f2;
-  margin: 10px 5px;
-  padding: 10px 60px;
+  margin: 10px 5px 20px 5px;
+  padding: 10px 40px;
   border-radius: 40px;
   text-decoration: none;
   font-weight: bold;
@@ -48,10 +56,78 @@
   text-align: center;
 }
 
+.menu-icons{
+  text-decoration: none;
+}
+
+.menu-icons:visited{
+
+}
+
+.menu-myicon-wrapper{
+  padding: 5px 10px;
+  position: relative;
+ 
+}
+
+.menu-myicon{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+}
+
+.menu-myicon-wrapper:hover{
+  background-color: #e8f5fd;
+  border-radius: 40px;
+  
+}
+
+.menu-myicon-wrap{
+  margin-left: 55px;
+  margin-right: 60px;
+}
+
+.name{
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.myicon-code{
+  color:  #96a3ae;
+  display:block;
+  font-size: 14px;
+}
+
+.name:visited{
+  color: black;
+}
+
+.myicon-code:visited{
+  color:  #96a3ae;
+}
+
+.fa-chevron-down{
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  color:black;
+}
+
+.fa-chevron-down:visited{
+  color: black;
+}
+
+
 .main-wrapper{
   width: 600px;
   border: 1px solid #e6ecf0;
-  margin: 0 30px;
+  margin: 0 30px 0 20px;
 }
 
 .top{
@@ -79,7 +155,7 @@
 
 .profile-img{
   width: 100%;
-  height: auto;
+  height: 200px;
 }
 
 .profile-wrap{
@@ -87,7 +163,7 @@
 }
 
 .my-icon{
-  background-image: url("../baby.jpeg");
+  background-image: url("image/baby.jpeg");
   width: 150px;
   height: 150px;
   border: 4px solid white;
@@ -169,7 +245,7 @@
 }
 
 .follow:visited{
-  color: black;
+  color:  #96a3ae;
 }
 
 .follower:visited{
@@ -273,8 +349,13 @@
 }
 
 .info-wrapper{
-  /* flex: auto; */
+  flex: 1;
 }
+
+.info-wrap{
+  
+}
+
 
 .search{
   color: #96a3ae;
@@ -282,5 +363,92 @@
   padding: 15px;
   font-size: 18px;
   background-color: #e6ecf0;
+  border: 0;
+  border-radius: 40px;
   width: 320px;
+}
+
+.picture{
+  height: 200px;
+  background-color: #e6ecf0;
+  margin-top: 10px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.recommended{
+  background-color: #e6ecf0;
+  margin-top: 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size:20px;
+  width: 100%;
+  padding: 5px 15px;
+  border-bottom: 1px solid  #e6ecf0;
+}
+
+.now{
+  height: 50px;
+  background-color: #e6ecf0;
+  margin-top: 10px;
+  border-radius: 40px;
+}
+
+.site-wrapper{
+  color:  #96a3ae;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.site{
+  margin-right: 5px;
+}
+
+.site:visited{
+  color:  #96a3ae;
+}
+
+.mark{
+  display: inline-block;
+  margin: 0;
+}
+
+@media (max-width: 1000px){
+  .menu-text{
+    display: none;
+  }
+
+  .menu-icon{
+    font-size: 30px;
+  }
+
+  .menu{
+    margin: 0;
+    padding: 0;
+  }
+
+  .tweet-btn{
+    /* display: none; */
+  }
+
+  .info-wrapper{
+    display: none;
+  }
+}
+
+
+@media (max-width: 480px){
+  .menu-wrapper{
+    display: none;
+  }
+
+
+
+  .info-wrapper{
+    display: none;
+  }
+
+  .main-wrapper{
+    margin:0;
+  }
 }
