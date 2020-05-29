@@ -1,6 +1,6 @@
 body{
-  margin: 0 70px;
   height: 100vh;
+  margin:0;
 }
 
 .top-wrapper{
@@ -11,6 +11,8 @@ body{
 .menu-wrapper{
   display:flex;
   flex-direction: column;
+  margin-left: 65px;
+  margin-right: 20px;
 }
 
 .menu{
@@ -49,7 +51,7 @@ body{
 
 .tweet-btn{
   background-color: #41a1f2;
-  margin: 20px 35px 100px 0;
+  margin: 20px 35px 70px 0;
   border-radius: 40px;
   text-decoration: none;
   font-weight: bold;
@@ -63,9 +65,9 @@ body{
 }
 
 .menu-myicon-wrapper{
-  padding: 5px 10px;
+  padding: 5px 10px 15px 10px;
   position: relative;
- 
+  width: 217px;
 }
 
 .menu-myicon{
@@ -94,12 +96,17 @@ body{
   text-decoration: none;
   font-weight: bold;
   color: black;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .myicon-code{
   color:  #96a3ae;
   display:block;
   font-size: 14px;
+  line-height: 4px;
 }
 
 .name:visited{
@@ -112,8 +119,8 @@ body{
 
 .fa-chevron-down{
   position: absolute;
-  top: 20px;
-  right: 10px;
+  top: 18px;
+  right: 18px;
   color:black;
 }
 
@@ -125,7 +132,6 @@ body{
 .main-wrapper{
   width: 600px;
   border: 1px solid #e6ecf0;
-  margin: 0 30px 0 20px;
 }
 
 .top{
@@ -276,13 +282,13 @@ body{
 }
 
 .tweet-wrapper{
-  padding: 10px 20px;
+  padding: 8px 15px;
   position: relative;
 }
 
 .tweet-icon{
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-position: center center;
   background-size: cover;
@@ -290,7 +296,7 @@ body{
 }
 
 .tweet-wrap{
-  margin-left: 80px;
+  margin-left: 65px;
 }
 
 .tweet-name{
@@ -318,6 +324,11 @@ body{
   display: inline-block;
 }
 
+.tweet{
+  margin: 0;
+  padding-bottom: 10px;
+}
+
 .counter-wrapper{
   display: flex;
   justify-content: start;
@@ -328,14 +339,16 @@ body{
 .counter{
   margin-right: 60px;
 }
+
 .counter-icon{
-  margin-right: 5px;
+  font-size: 18px;
+  padding:5px;
+  display: inline-block;
 }
 
 .counter-icon:hover{
   background-color: #e8f5fd;
   border-radius: 50%;
-  padding: 5px;
 }
 
 .counter{
@@ -351,9 +364,9 @@ body{
 }
 
 .info-wrap{
-  
+  width: 350px;
+  margin-left: 20px;
 }
-
 
 .search{
   color: #96a3ae;
@@ -371,31 +384,121 @@ body{
   background-color: #e6ecf0;
   margin-top: 10px;
   border-radius: 15px;
-  width: 100%;
+  width: 350px;
 }
 
-.recommended{
-  background-color: #e6ecf0;
+.recommended-wrapper,
+.news-wrapper{
+  background-color: #f5f8fa;
   margin-top: 10px;
   border-radius: 15px;
-  font-weight: bold;
-  font-size:20px;
+  padding-top: 5px;
   width: 100%;
-  padding: 5px 15px;
-  border-bottom: 1px solid  #e6ecf0;
 }
 
-.now{
-  height: 50px;
-  background-color: #e6ecf0;
-  margin-top: 10px;
-  border-radius: 40px;
+.recommended-title,.news-title{
+  font-weight: bold;
+  font-size:20px;
+  margin: 0;
+  border-bottom: 1px solid #e6ecf0;
+  padding: 5px 15px;
+}
+
+.follower-list-wrapper,
+.news-list-wrapper{
+  margin: 0;
+  padding: 0;
+}
+
+.follower-list-wrap,
+.news-list-wrapp{
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #e6ecf0;
+  padding: 15px;
+}
+
+.list{
+  text-decoration: none;
+}
+
+.follower-list{
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 0 5px;
+}
+
+.follower-icon{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
+}
+
+.follower-name{
+  margin: 0;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  max-width: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.follower-name:hover{
+  text-decoration: underline;
+}
+
+.follower-code{
+  color:  #96a3ae;
+  line-height: 15px;
+  display: block;
+  margin: 0;
+}
+
+.follow-btn{
+  border: 1px solid #41a1f2;
+  color: #41a1f2;
+  border-radius: 25px;
+  font-weight: bold;
+  width: 80px;
+  padding: 5px 10px;
+  height:25px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.list-add{
+  color: #41a1f2;
+  text-decoration: none;
+  margin: 15px;
+}
+
+.news-item{
+  margin: 0;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  max-width: 250px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.news-img{
+  width: 70px;
+  height: 70px;
+  border-radius: 20%;
+  background-position: center center;
+  background-size: cover;
 }
 
 .site-wrapper{
   color:  #96a3ae;
-  padding: 10px;
-  font-size: 15px;
+  padding: 15px;
+  font-size: 13px;
 }
 
 .site{
@@ -412,12 +515,23 @@ body{
 }
 
 @media (max-width: 1000px){
+
+  .menu-wrapper{
+    margin: 0;
+  }
+  
   .menu-text{
     display: none;
   }
 
+
   .menu-icon{
     font-size: 30px;
+    margin:0;
+  }
+
+  .menu-icon:hover{
+    background-color: #e8f5fd;
   }
 
   .menu{
@@ -426,10 +540,18 @@ body{
   }
 
   .tweet-btn{
-    /* display: none; */
+    display: none;
   }
 
   .info-wrapper{
+    display: none;
+  }
+
+  .name{
+    display: none;
+  }
+
+  .myicon-code{
     display: none;
   }
 }
