@@ -6,17 +6,13 @@ body{
 .top-wrapper{
   display:flex;
   justify-content: space-between;
+  margin: 0 70px;
 }
 
 .menu-wrapper{
   display:flex;
   flex-direction: column;
-  margin-left: 65px;
-  margin-right: 20px;
-  z-index: 10;
-  position: sticky;
-  box-sizing: border-box;
-  width: 217px;
+  width: 300px;
 }
 
 .menu{
@@ -30,14 +26,15 @@ body{
   color: black;
 }
 
-.menu-icon{
-  margin-right: 15px;
-}
-
 .menu-inner {
   padding: 8px 10px;
   display: inline-block;
   margin-top: 5px;
+}
+
+.menu-text{
+  display: inline-block;
+  margin-left: 15px;
 }
 
 .menu:hover .menu-inner{
@@ -55,13 +52,14 @@ body{
 
 .tweet-btn{
   background-color: #41a1f2;
-  margin: 20px 35px 70px 0;
   border-radius: 40px;
   text-decoration: none;
   font-weight: bold;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+  margin: 20px 35px 70px 0;
+  display:block;
 }
 
 .menu-icons{
@@ -391,7 +389,7 @@ body{
 }
 
 .search-wrap{
-  padding: 0 20px;
+  padding: 0 20px 3px 20px;
   z-index: 10;
   top:0;
   background-color: white;
@@ -571,14 +569,71 @@ body{
   margin: 0;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1270px){
+  .menu-wrapper{
+    /* max-width: 180px; */
+    /* box-sizing: border-box; */
+    position: absolute;
+    padding:5px;
+  }
+
+  .menu-text{
+    display: none;
+  }
+
+  .menu-icon{
+    font-size: 30px;
+    margin:0;
+    max-width: 20px;
+  }
+
+  .menu-icon:hover{
+    background-color: #e8f5fd;
+  }
+
+  .menu{
+    margin: 0;
+    padding: 0;
+  }
+
+  .name{
+    display: none;
+  }
+
+  .myicon-code{
+    display: none;
+  }
+}
+
+
+}
+
+@media (max-width: 600px){
+
+  .top-wrapper{
+    margin-left: 5px;
+    margin-right: 0;
+    position: relative;
+  }
 
   .menu-wrapper{
-    margin: 0;
+    /* max-width: 70px;
+    box-sizing: border-box; */
+    /* position: absolute;
+    padding:5px; */
+  
   }
   
   .menu-text{
     display: none;
+  }
+
+  .menu-wrap{
+    max-width: 20px;
+  }
+
+  .menu{
+    width: 20px;
   }
 
 
@@ -615,6 +670,7 @@ body{
 
 
 @media (max-width: 480px){
+  
   .menu-wrapper{
     display: none;
   }

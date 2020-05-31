@@ -8,95 +8,79 @@
     <title>Twitter</title>
   </head>
   <body>
-  <!-- 全背景 -->
-  <div class = "top-wrapper">
+    <!-- 全背景 -->
+    <div class = "top-wrapper">
 
-    <!-- メニュー背景 -->
-    <div class = "menu-wrapper">
+      <!-- メニュー背景 -->
+      <div class = "menu-wrapper js-container">
+        <div class = "js-sidebar">
 
-      <div class = "menu-wrap">
-        <a class =  "menu" href ="#">
-          <div class="menu-inner">
-            <i class="fab fa-twitter menu-icon"></i>
-          </div>
-        </a>
-      </div>
+          <a class =  "menu" href ="#">
+            <div class="menu-inner">
+              <i class="fab fa-twitter menu-icon"></i>
+            </div>
+          </a>
 
-      <div class = "menu-wrap">
-        <a class =  "menu" href ="#">
-          <div class="menu-inner">
-            <i class="fas fa-home menu-icon"></i>
-            <span class = "menu-text">ホーム</span>
-          </div>
-        </a>
-      </div>
+          <a class =  "menu" href ="#">
+            <div class="menu-inner">
+              <i class="fas fa-home menu-icon"></i>
+              <div class = "menu-text">ホーム</div>
+            </div>
+          </a>
 
-      <div class = "menu-wrap">
-        <a class =  "menu" href ="#">
-          <div class="menu-inner">
-            <i class="fas fa-hashtag menu-icon"></i>
-            <span class = "menu-text">話題を検索</span>
-          </div>
-        </a>
-      </div>
+          <a class =  "menu" href ="#">
+            <div class="menu-inner">
+              <i class="fas fa-hashtag menu-icon"></i>
+              <div class = "menu-text">話題を検索</div>
+            </div>
+          </a>
 
-      <div class = "menu-wrap">
-        <a class = "menu" href ="#">
-          <div class="menu-inner">
-          <i class="far fa-bell menu-icon"></i>
-          <span class = "menu-text">通知</span>
-          </div>
-        </a>
-      </div>
+          <a class = "menu" href ="#">
+            <div class="menu-inner">
+            <i class="far fa-bell menu-icon"></i>
+            <div class = "menu-text">通知</div>
+            </div>
+          </a>
 
-      <div class = "menu-wrap">
-        <a class =  "menu" href ="#">
-          <div class="menu-inner">
-            <i class="far fa-envelope menu-icon"></i>
-            <span class = "menu-text">メッセージ</span>
-          </div>
-        </a>
-      </div>
+          <a class =  "menu" href ="#">
+            <div class="menu-inner">
+              <i class="far fa-envelope menu-icon"></i>
+              <div class = "menu-text">メッセージ</div>
+            </div>
+          </a>
 
-      <div class = "menu-wrap">
-        <a class =  "menu" href ="#">
-          <div class="menu-inner">
-            <i class="far fa-bookmark menu-icon"></i>
-            <span class = "menu-text">ブックマーク</span>
-          </div>
-        </a>
-      </div>
+          <a class =  "menu" href ="#">
+            <div class="menu-inner">
+              <i class="far fa-bookmark menu-icon"></i>
+              <div class = "menu-text">ブックマーク</div>
+            </div>
+          </a>
 
-      <div class = "menu-wrap">
-        <a class =  "menu" href ="#">
-          <div class="menu-inner">
-            <i class="far fa-file-alt menu-icon"></i>
-            <span class = "menu-text">リスト</span>
-          </div>
-        </a>
-      </div>
+          <a class =  "menu" href ="#">
+            <div class="menu-inner">
+              <i class="far fa-file-alt menu-icon"></i>
+              <div class = "menu-text">リスト</div>
+            </div>
+          </a>
 
-      <div class = "menu-wrap">
-        <a class = "menu" href ="#">
-          <div class="menu-inner">
-            <i class="fas fa-user menu-icon"></i>
-            <span class = "menu-text">プロフィール</span>
-          </div>
-        </a>
-      </div>
+          <a class = "menu" href ="#">
+            <div class="menu-inner">
+              <i class="fas fa-user menu-icon"></i>
+              <div class = "menu-text">プロフィール</div>
+            </div>
+          </a>
 
-      <div class = "menu-wrap">
-        <a class = "menu" href ="#">
-          <div class="menu-inner">
-            <i class="far fa-comment-dots menu-icon"></i>
-            <span class = "menu-text">もっと見る</span>
-          </div>
-        </a>
-      </div>
+          <a class = "menu" href ="#">
+            <div class="menu-inner">
+              <i class="far fa-comment-dots menu-icon"></i>
+              <div class = "menu-text">もっと見る</div>
+            </div>
+          </a>
 
-      <a class = "tweet-btn" href ="#">
-          ツイートする
-      </a>
+          <a class = "tweet-btn" href ="#">
+              ツイートする
+          </a>
+        
 
       <a class ="menu-icons" href ="#">
         <div class ="menu-myicon-wrapper">
@@ -109,6 +93,8 @@
         </div>
       </a>
     </div>
+   
+  </div>
 
     
     <!-- メイン背景 -->
@@ -512,10 +498,11 @@
           </ul>
         </div>
         
-        <div class = "container">
-          <div class = "news">
+        <div class = "container js-container">
+          <div class = "news ">
             <div class = "news-wrapper">
               <p class = "news-title">いまどうしてる？</p>
+              <div class = "js-sidebar2">
               <ul class = "news-list-wrapper">
                 <a class = "news-list-wrapp" href = "#">
                   <p class = "news-item">更新：東京都 6月１日から休業要請緩和へ</p>
@@ -560,9 +547,11 @@
           </div>
         </div>
         </div>
+        </div>
       </div>
     </div>
   </div>
+  
   <script src="https://unpkg.com/pretty-scroll@1.1.0/js/pretty-scroll.js"></script>
 
   <script src = "twitter.js"></script>
